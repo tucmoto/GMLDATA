@@ -38,4 +38,5 @@ jobs:
         ls -R
     - name: Test with pytest
       run: |
-        pytest --collect-only -v
+        pytest -v --maxfail=1 --disable-warnings
+
